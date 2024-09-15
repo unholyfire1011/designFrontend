@@ -3,7 +3,7 @@ import three from '../assets/threejs.png'
 import state from '../store'
 import { useSnapshot } from 'valtio'
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+import {  useGLTF } from '@react-three/drei';
 import { Environment } from '@react-three/drei';
 import * as THREE from 'three';
 
