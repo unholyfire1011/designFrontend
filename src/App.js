@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSnapshot } from "valtio";
+import state from "./store/index.js";
+import ShoeComponent from "./components/ShoeComponent.jsx";
+import Shirt from "./components/Shirt.jsx";
+import Homepage from "./Page/Homepage.jsx";
 
 function App() {
+  const states = useSnapshot(state);
+  console.log(states.currentPage);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {states.currentPage === "home" ? <Homepage /> : <></>}
+      {states.currentPage === "shoe" ? <ShoeComponent /> : <></>}
+      {states.currentPage === "shirt" ? <Shirt /> : <></>}
+    </>
   );
 }
 
