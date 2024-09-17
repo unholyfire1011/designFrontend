@@ -76,7 +76,7 @@ const Homepage = () => {
                 </div>
                 <div className="Homepage_content_heading">
                     <h1>Dimension3D</h1>
-                    <h3>Click on a object to animate ➔</h3>
+                    <h3>Click on a object to start ➔</h3>
                 </div>
 
             </div>
