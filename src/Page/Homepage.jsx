@@ -3,7 +3,7 @@ import three from '../assets/threejs.png'
 import state from '../store'
 import { useSnapshot } from 'valtio'
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+import {  useGLTF } from '@react-three/drei';
 import { Environment } from '@react-three/drei';
 import * as THREE from 'three';
 
@@ -76,7 +76,7 @@ const Homepage = () => {
                 </div>
                 <div className="Homepage_content_heading">
                     <h1>Dimension3D</h1>
-                    <h3>Click on a object to animate ➔</h3>
+                    <h3>Click on a object to start ➔</h3>
                 </div>
 
             </div>
